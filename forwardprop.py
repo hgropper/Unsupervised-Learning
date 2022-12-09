@@ -14,7 +14,7 @@ def foward_propogation(input_layer, weights):
     To compute a new output layer with the newly computed hidden layer
     """    
     # This function is vectorized using numpy
-    # for incredibly fast computation!!
+    # for incredibly fast computation!!!
 
     # applying our weights to the input layer via dot product and the tanh activation function + bias term
     hidden_layer = np.insert(tanh(np.dot(input_layer,weights['Layer 1'])), 0 , 1)
